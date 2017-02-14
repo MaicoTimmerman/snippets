@@ -1,6 +1,6 @@
 priority -50
 
-snippet newnode "Create node" b
+snippet node "Create node" b
 <node name="$1">
 	<description>$2</description>
 	<sons>
@@ -9,7 +9,7 @@ snippet newnode "Create node" b
 </node>
 endsnippet
 
-snippet newnodeset "Create nodeset" b
+snippet nodeset "Create nodeset" b
 <nodeset name="$1">
 	<target>
 		$0
@@ -28,7 +28,7 @@ snippet attr "Create attribute" b
 	<description>$2</description>
 	<type name="$3">
 		<targets>
-			<target mandatory="${4:yes}">
+			<target mandatory="${4:yes/no}">
 				<phases><all /></phases>
 			</target>
 		</targets>
@@ -36,11 +36,11 @@ snippet attr "Create attribute" b
 </attribute>
 endsnippet
 
-snippet newnsnode "Create node in nodeset" b
+snippet snode "Create node in nodeset" b
 <node name="$1" />
 endsnippet
 
-snippet newson "Create son" b
+snippet son "Create son" b
 <son name="$1">
 	<targets>
 		<target mandatory="${2:yes}">
