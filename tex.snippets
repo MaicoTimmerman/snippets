@@ -7,4 +7,20 @@ snippet eqal "Aligned equation environment" b
 	\end{aligned}
 \end{equation}
 endsnippet
+
+snippet code "Create minted code snippet" b
+\begin{code}
+\captionof{listing}{$0}
+\label{code:$1}
+\begin{$2code}
+$3
+\end{$2code}
+\end{code}
+endsnippet
+
+snippet ali "Create align environment" b
+\begin{align}
+	$1
+\end{align}
+endsnippet
 # vim:ft=snippets:
